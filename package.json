@@ -1,0 +1,12 @@
+{
+  "name": "SPA-JS",
+  "version": "1.0.0",
+  "description": "Single Page Application",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": ["JavaScript"],
+  "author": "Sebastian Buitrago <johanbuitrago342@gmail.com>",
+  "license": "MIT"
+}
