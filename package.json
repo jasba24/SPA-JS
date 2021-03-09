@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Single Page Application",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
   "keywords": [
     "JavaScript"
   ],
