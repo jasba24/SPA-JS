@@ -1,14 +1,16 @@
+import "../styles/main.css"
+
 const Header = () => {
 	const view = `
-		<div className="Header-main">
-			<div className="Header-logo">
+		<div class="Header-main">
+			<div class="Header-logo">
 				<h1>
 					<a href="/">
 						100tifi.co
 					</a>
 				</h1>
 			</div>
-			<div className="Header-nav">
+			<div class="Header-nav">
 				<a href="#/about/">
 					About
 				</a>
