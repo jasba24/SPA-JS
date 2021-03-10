@@ -12,7 +12,8 @@ module.exports = {
 	resolve: {
 		extensions: [".js"],
 	},
-	mode: "production",
+	mode: "development",
+	devtool: "source-map",
 	module: {
 		rules: [
 			{
@@ -37,5 +38,11 @@ module.exports = {
 				filename: "./index.html",
 			}),
 		new MiniCssExtractPlugin(),
-	]
+	],
+	devServer: {
+		contentBase: path.join("__dirname", "dist"),
+		compress: true,
+		historyApiFallback: true,
+		port: 3005,
+	},
 }
