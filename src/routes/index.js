@@ -1,6 +1,7 @@
 import Header from "../templates/Header"
 import Home from "../pages/Home"
 import Charater from "../pages/Character"
+import About from "../pages/About"
 import Error404 from "../pages/Error404"
 import getHash from "../utils/getHash"
 import resolveRoutes from "../utils/resolveRoutes"
@@ -8,7 +9,7 @@ import resolveRoutes from "../utils/resolveRoutes"
 const routes = {
 	"/": Home,
 	"/:id": Charater,
-	"/contact": "Contact",
+	"/about": About,
 }
 
 const router = async () => {
