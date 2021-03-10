@@ -4,7 +4,7 @@ import "../styles/main.css"
 const About = async () => {
 	const character = await getData()
 	const view = `
-		<div className="Characters-outer">
+		<div class="Characters-outer">
 		<article class="Characters-card">
 				<img src="${character.image}" alt="${character.name}">
 					<h2>${character.name}</h2>

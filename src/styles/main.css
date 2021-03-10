@@ -40,6 +40,13 @@ body {
   display: grid;
 }
 
+.Characters-outer {
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+}
+
 .Characters-card {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
@@ -81,6 +88,7 @@ body {
 
 .Characters-item:hover {
   animation-name: hoverActive;
+  animation-duration: 1s;
 }
 
 .Characters-item img {
@@ -126,10 +134,16 @@ body {
 }
 
 @keyframes hoverActive {
-  from {
+  0% {
     transform: translateY(0);
   }
-  to {
+  40% {
     transform: translateY(20px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
