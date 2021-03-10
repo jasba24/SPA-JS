@@ -78,6 +78,10 @@ body {
   animation-name: fade;
 }
 
+.Characters-item:hover {
+  animation-name: hoverActive;
+}
+
 .Characters-item img {
   width: 100%;
   height: auto;
@@ -119,3 +123,14 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@keyframes hoverActive {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map*/
